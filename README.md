@@ -52,7 +52,19 @@ If you want to participate, be sure to read [how to participate](https://github.
 
 # 8. Containers/Microservices
     - 8.0 Introduction
-    - 8.1 Using Haproxt as an API Gateway
+    - 8.1 Using Haproxy as an API Gateway
+    - 8.2 Service discovery with SRV records
+    - 8.3 Using the Official Haproxy Image
+    - 8.4 Creating an Haproxy Dockerfile
+    - 8.5 Using Variables in Haproxy
+    - 8.6 Kubernetes Ingress Controller
+    - 8.7 Prometheus Exporter Module
+# 9. Alerts and Monitoring
+    - 9.0 Introduction
+    - 9.1 Email alerts
+    - 9.2 Error pages
+    - 9.3 Monitor URI
+    - 9.4 Prometheus metrics
 
 
 
