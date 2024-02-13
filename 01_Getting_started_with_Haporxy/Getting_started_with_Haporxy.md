@@ -65,3 +65,50 @@ sudo yum -y install haproxy
 ```
 
 # 1.3 Verifying Your Installation
+
+## Problem
+You want to validate the HAProxy installation and check the version.
+
+## Solution
+You can verify that HAProxy is installed and check its version by using the following
+command:
+```bash
+haproxy -v
+HAProxy version 2.8.5-1ppa1~focal 2023/12/09 - https://haproxy.org/
+Status: long-term supported branch - will stop receiving fixes around Q2 2028.
+Known bugs: http://www.haproxy.org/bugs/bugs-2.8.5.html
+Running on: Linux 5.15.0-94-generic 104~20.04.1-Ubuntu SMP Tue Jan 16 13:34:09 UTC 2024 x86_64
+```
+
+# 1.4 KeyFiles, Directory, and Commands
+
+## Problem
+You need to understand the important HAProxy directories and commands.
+
+## Solution
+
+### HAProxy files and directories
+`/etc/haproxy/`
+The `/etc/haproxy/` directory is the default configuration root for the haproxy.
+Within this directory you will find configuration files that instruct HAProxy on
+how to behave.
+
+`/etc/haproxy/haproxy.cfg`
+The HAProxy service uses the `/etc/haproxy/haproxy.cfg` file as its default configuration entry point. This configuration file configures global variables for timeout, logging, errorfile, and other global variables. You can click this [link](https://www.haproxy.com/documentation/haproxy-configuration-manual/2-8r1/) to view additional information.
+
+### HAProxy commands
+
+**Starting HAProxy**:
+```bash
+haproxy -f /path/to/haproxy.cfg
+```
+
+**Querying HAProxy Status**:
+```bash
+haproxy -vv
+```
+
+**Stats Socket**:
+```bash
+echo "disable server <backend_name>/<server_name>" | socat /var/run/haproxy.sock stdio
+```
