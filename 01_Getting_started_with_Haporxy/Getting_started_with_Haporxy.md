@@ -112,3 +112,5 @@ haproxy -vv
 ```bash
 echo "disable server <backend_name>/<server_name>" | socat /var/run/haproxy.sock stdio
 ```
+
+Effective use of HAProxy requires an understanding of configuration components such as **frontend** **backend** **defaults** and **global**. I won't go into concept explanations because this is a cookbook; however, you can visit this [link](https://www.haproxy.com/documentation/haproxy-configuration-tutorials/core-concepts/) to learn about basic concepts in HAProxy. 

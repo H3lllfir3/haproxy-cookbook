@@ -4,7 +4,8 @@ This is a Haproxy cookbook where we provide configuration files and other relate
 
 If you want to participate, be sure to read [how to participate](https://github.com/H3lllfir3/haproxy-cookbook/blob/main/CONTRIBUTING.md).
 
-This repo is based on the Haproxy 2.8 (LTS)
+This repository mostly contains information for this [link](https://www.haproxy.com/documentation/haproxy-configuration-tutorials/), and is based on Haproxy 2.8 (LTS).
+
 
 # 1. Getting started with Haporxy
     - 1.0 Introduction
